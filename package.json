@@ -1,7 +1,7 @@
 {
-  "name": "invoice-tmp",
+  "name": "invoice-preview",
   "version": "1.0.0",
-  "description": "",
+  "description": "国内发票预览模板",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,11 @@
     "deploy": "gh-pages -d examples/dist",
     "publish-demo": "npm run build && npm run deploy"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "发票模板",
+    "发票预览"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -31,5 +35,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "num_operation": "^1.0.5"
   }
 }

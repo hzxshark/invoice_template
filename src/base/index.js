@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import { digitToCNchar } from 'num_operation';
 
 const data = [
     { "1": '第一笔订单', "2": '2019-12-07', "3": '台', "4": 3, "5": '￥100', "6": '￥300.00', "7": 0, "8": '￥0.00' },
@@ -158,7 +159,7 @@ export default class InvoiceTmp extends React.Component {
             </Col>
         </Row>
         <Row className ='row'>
-            <Col className='col_15 no-border'>价税合计（大写）玖佰元整</Col>
+            <Col className='col_15 no-border'>价税合计（大写）{digitToCNchar(900)}</Col>
             <Col className='no-border' style={{borderLeft: 'none'}}>（小写）<span>￥900.00</span></Col>
         </Row>
         <Row className ='row height84'>
