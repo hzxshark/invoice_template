@@ -8,8 +8,7 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
+    "publish-demo": "npm run build && npm run deploy"
   },
   "keywords": [
     "css",
